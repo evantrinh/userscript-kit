@@ -17,7 +17,7 @@ npm install -g esbuild
 Grab `build.js` and `userscript.config.js`
 
 ```sh
-npx degit evantrinh/userscript-kit/template my-project
+npx degit evantrinh/userscript-kit/base your-project
 ```
 
 ## Usage
