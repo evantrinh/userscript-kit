@@ -26,7 +26,7 @@ node build.js --watch
 
 This starts the dev server. It:
 
-- Builds your script and serves it at `http://localhost:7653`
+- Builds your script and serves it at `http://localhost:4532`
 - Watches `src/` for changes and rebuilds on save
 - Sends a reload signal to connected browser tabs automatically
 

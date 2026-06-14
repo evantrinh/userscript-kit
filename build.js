@@ -16,7 +16,7 @@ import { createHash } from 'crypto';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DEV       = process.argv.includes('--watch');
-const PORT      = 1000;
+const PORT      = 4532;
 
 // config
 
