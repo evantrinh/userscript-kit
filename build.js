@@ -41,6 +41,8 @@ function makeHeader(extra = {}) {
     .map(g => `// @grant       ${g}`).join('\n');
   const connects = (meta.connect ?? [])
     .map(c => `// @connect     ${c}`).join('\n');
+  const includes = (meta.include ?? [])
+    .map(i => `// @include      ${i}`).join('\n');
 
   return [
     '// ==UserScript==',
