@@ -14,7 +14,11 @@ npm install -g esbuild
 
 ## Setup
 
-placeholder but bbasically u grab the build and config and put it into ur project folder
+Grab `build.js` and `userscript.config.js`
+
+```sh
+npx degit evantrinh/userscript-kit/template my-project
+```
 
 ## Usage
 
