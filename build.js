@@ -6,8 +6,7 @@
 //   node build.js              production build
 //   node build.js --watch      dev mode
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
-import { watch } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync, watch } from 'fs';
 import { execSync } from 'child_process';
 import { createServer } from 'http';
 import { join, dirname, basename } from 'path';
@@ -139,7 +138,7 @@ function build() {
   }
 
   // cleanup tmp
-  try { execSync(`rm "${TMP}"`); } catch (_) {}
+  try { unlinkSync(TMP); } catch (_) {}
 
   buildHash = createHash('md5').update(bundled).digest('hex').slice(0, 8);
   return true;
